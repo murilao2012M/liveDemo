@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de Roupas 4 Estações - Entregas em todo o Brasil, para todos os gostos, estilos e tamanhos. Descontos, Promoções e Compra Facilitada.">
+    <meta name="keywords" content="roupas, moda, descontos, smartphones, eletrodomésticos, tecnologia">
+    <meta name="author" content="Minha Loja">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minha Loja - Afiliado Magazine Luiza</title>
+
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Swiper.js CSS para o carrossel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+</head>
+<body class="bg-light">
+
+    <!-- Banner com Categorias e Produtos -->
+    <section id="banner" class="banner-categorias position-relative text-white" style="background-image: url('../imagens/banner-bg.jpg'); background-size: cover;">
+        <div class="banner-content position-absolute top-50 start-50 translate-middle text-center">
+            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Explore Nossas Categorias</h1>
+            <p class="lead mb-5 animate__animated animate__fadeInUp">Os Melhores Produtos para Você.</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="index.html" class="btn btn-primary btn-lg">Smartphones</a>
+                <a href="moda.html" class="btn btn-primary btn-lg">Moda</a>
+                <a href="notebook.html" class="btn btn-primary btn-lg">Notebooks</a>
+                <a href="eletrodomestico.html" class="btn btn-primary btn-lg">Eletrodomésticos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Produtos em Destaque -->
+    <section id="produtos-destaque" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 font-weight-bold text-primary">Smartphones em Oferta</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Produto 1 -->
+                    <div class="swiper-slide">
+                        <div class="card shadow-sm border-0">
+                            <img src="../imagens/iphone13.jpg" class="card-img-top" alt="Apple iPhone 13 128GB Meia-noite">
+                            <div class="card-body">
+                                <p class="card-title fw-bold text-dark">Apple iPhone 13 128GB Meia-noite</p>
+                                <p class="card-text text-muted"><s>R$ 7.599,90</s></p>
+                                <p class="card-text text-danger">Por: 10x R$ 427,67</p>
+                                <a class="btn btn-primary w-100" href="#">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produto 2 -->
+                    <div class="swiper-slide">
+                        <div class="card shadow-sm border-0">
+                            <img src="../imagens/iphone.jpg" class="card-img-top" alt="iPhone 12 Apple 64GB Branco">
+                            <div class="card-body">
+                                <p class="card-title fw-bold text-dark">iPhone 12 Apple 64GB Branco</p>
+                                <p class="card-text text-muted"><s>R$ 6.191,90</s></p>
+                                <p class="card-text text-danger">Por: 12x de R$ 311,00</p>
+                                <a class="btn btn-primary w-100" href="#">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compartilhamento Social -->
+    <section id="share" class="text-center py-4 bg-primary text-white">
+        <p class="mb-3">Compartilhe nossos produtos:</p>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://minhaloja.com/produto" target="_blank" class="btn btn-light mx-2">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://minhaloja.com/produto&text=Confira+esse+produto+incr%C3%ADvel!" target="_blank" class="btn btn-light mx-2">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <p>&copy; 2024 Minha Loja - Todos os Direitos Reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 1 },
+                992: { slidesPerView: 2 },
+                1200: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+    <!-- AOS JS (Animações de scroll) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
